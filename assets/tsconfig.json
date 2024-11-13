@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es2015",
+ 
+      "esModuleInterop": true
+    },
+    "include": [
+      "src/js/*.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
+  

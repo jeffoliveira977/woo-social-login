@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "dev": "mix",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "mix --production",
+    "production": "mix --production",
+    "language": "wp i18n make-pot ../ --exclude=\"assets\",\"tests\",\"vendor\" ../languages/login-with-google.pot"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "vue-loader": "^16.2.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.5.18",
+    "jquery": "^3.7.1"
+  }
+}

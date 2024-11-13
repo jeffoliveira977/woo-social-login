@@ -1,0 +1,437 @@
+.hidden {
+  display: none;
+}
+
+.wsl-eye {
+  position: absolute;
+  top: 61%;
+  right: 3%;
+  cursor: pointer;
+}
+
+.wsl-password {
+  position: relative;
+}
+
+.wsl-loading-spinner {
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: rgb(255, 255, 255) rgba(0, 0, 0, 0);
+  animation: s1 1s infinite;
+}
+
+@keyframes s1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+.wsl-password-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+.wsl-password-message.success {
+  background: rgb(229, 255, 241);
+  color: rgb(39, 178, 100);
+}
+.wsl-password-message.error {
+  background: rgb(255, 229, 230);
+  color: rgb(231, 38, 38);
+}
+.wsl-password-message.check {
+  font-size: 0.85rem;
+}
+
+.wsl-password-message-group {
+  width: 100%;
+  display: grid;
+  margin-top: 0.5rem;
+  gap: 10px;
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-password-message-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.wsl-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.wsl-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.wsl-otp-verification-form {
+  width: 300px;
+}
+.wsl-otp-verification-form p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.wsl-otp-grid input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.wsl-otp-grid input::-webkit-inner-spin-button, .wsl-otp-grid input::-webkit-outer-spin-button {
+  display: none;
+}
+
+#wsl-otp-resend {
+  margin-left: 2px;
+}
+
+.wsl-otp-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin: 0 1rem 2rem 1rem;
+}
+.wsl-otp-grid input {
+  height: 45px;
+  text-align: center;
+}
+
+.wsl-otp-user {
+  display: flex;
+  justify-content: center;
+}
+.wsl-otp-user > a {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.wsl-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-panel {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wsl-panel {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.social-network-button {
+  display: flex;
+  align-items: center;
+  color: #111827;
+  min-width: 200px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.625rem;
+  padding-top: 0.625rem;
+  background-color: #fff;
+  border-color: #e5e7eb;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  border-style: solid;
+  justify-content: center;
+}
+
+@media screen and (min-width: 640px) {
+  .social-network-button {
+    font-size: 0.775rem;
+  }
+}
+.social-network-icon {
+  margin-right: 6px;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.social-network-line {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.social-network-line hr {
+  background-color: #e5e7eb !important;
+  width: 100%;
+  height: 0.125rem;
+  border: none;
+}
+.social-network-line span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: #6b7280;
+}
+
+.wsl-container {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-container {
+    max-width: 30rem;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wsl-container {
+    padding: 0px;
+  }
+}
+.wsl-align {
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-align {
+    padding: 0.5rem 2rem;
+  }
+}
+.wsl-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.wsl-group {
+  display: block;
+}
+.wsl-group div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.wsl-group div > .wsl-password-message {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-group {
+    display: flex;
+  }
+  .wsl-group div {
+    margin-bottom: 0;
+  }
+  .wsl-group div:first-child {
+    margin-right: 0.5rem;
+  }
+}
+.wsl-birthdate {
+  display: flex;
+  gap: 5px;
+}
+
+.wsl-form > div:not(.social-network-line, .wsl-otp-grid) {
+  margin-bottom: 1rem;
+}
+
+.wsl-form input[type=checkbox] {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  width: 1rem;
+  height: 1rem;
+}
+.wsl-form input:not([type=checkbox]) {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  background-color: #f9fafb;
+  padding: 0.625rem;
+  color: #111827;
+  box-sizing: border-box;
+  border-style: solid;
+}
+.wsl-form select {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  background-color: #f9fafb;
+  padding: 0.625rem;
+  color: #111827;
+  box-sizing: border-box;
+  border-style: solid;
+}
+.wsl-form input:focus:not([type=checkbox]),
+.wsl-form select:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+.wsl-form label {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+.wsl-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border: none;
+  font-weight: 500;
+  color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+.wsl-form button:hover {
+  background-color: #1d4ed8;
+}
+.wsl-form button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background-color: #2563eb;
+}
+
+@media screen and (min-width: 640px) {
+  .wsl-form input:not([type=checkbox]),
+  .wsl-form select {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+.wsl-checkbox-container {
+  display: flex;
+  align-items: center;
+}
+.wsl-checkbox-container div {
+  display: flex;
+  align-items: center;
+}
+.wsl-checkbox-container label {
+  font-weight: 300;
+  font-size: 0.91rem;
+  color: #6b7280;
+  line-height: normal;
+  margin-left: 4px;
+  margin-bottom: 0;
+}
+
+.already-have-account {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  color: #6b7280;
+}
+
+.wsl-link {
+  font-weight: 500 !important;
+  color: #2563eb !important;
+}
+
+.wsl-form > div > .wsl-link {
+  font-size: 0.91rem;
+}
+
+.wsl-link:hover {
+  text-decoration-line: underline;
+}
+
+.center-recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+.wsl-popup-message {
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1.1rem;
+  margin: 2px 0;
+  font-size: 0.75rem;
+  width: 500px;
+  max-width: 100%;
+  line-height: 2.2rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.31rem;
+  text-wrap: wrap;
+  animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards;
+}
+.wsl-popup-message.success {
+  background: rgba(37, 99, 235, 0.91);
+  color: rgb(255, 255, 255);
+}
+.wsl-popup-message.error {
+  background: rgba(255, 229, 230, 0.91);
+  color: rgb(231, 38, 38);
+}
+.wsl-popup-message span {
+  padding: 0 10px;
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

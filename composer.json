@@ -1,0 +1,22 @@
+{
+  "name": "jeferson/woo-social-login",
+  "description": "WordPress plugin to let users to login and register",
+  "type": "wordpress-plugin",
+  "license": "GPL 2.0",
+  "authors": [
+    {
+      "name": "Jeferson Oliveira",
+      "email": "jeffoliveira977@gmail.com"
+    }
+  ],
+  "require": {
+    "facebook/graph-sdk": "^5.1",
+    "twilio/sdk": "4.*",
+    "google/apiclient": "2.15.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Woo_social_login\\": "src/"
+    }
+  }
+}
